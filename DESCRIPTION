@@ -1,19 +1,23 @@
 Package: ParBayesianOptimization
 Title: Parallel Bayesian Optimization of Hyperparameters
-Version: 1.2.5
-Authors@R: person("Samuel", "Wilson", email = "samwilson303@gmail.com", role = c("aut", "cre"))
+Version: 1.2.7
+Authors@R: c(person("Samuel", "Wilson",
+                    email = "samwilson303@gmail.com",
+                    role = "aut"),
+             person(c("Brian", "J"), "Smith",
+                    email = "brian-j-smith@uiowa.edu",
+                    role = "cre"))
+Maintainer: Brian J Smith <brian-j-smith@uiowa.edu>
 Description: Fast, flexible framework for implementing Bayesian optimization of model 
-	hyperparameters according to the methods described in Snoek et al. <arXiv:1206.2944>.
+	hyperparameters according to the methods described in Snoek et al. <doi:10.48550/arXiv.1206.2944>.
 	The package allows the user to run scoring function in parallel, save intermediary 
 	results, and tweak other aspects of the process to fully utilize the computing resources
 	available to the user.
-URL: https://github.com/AnotherSamWilson/ParBayesianOptimization
-BugReports: https://github.com/AnotherSamWilson/ParBayesianOptimization/issues
+URL: https://github.com/brian-j-smith/ParBayesianOptimization
 Depends: R (>= 3.4)
 Imports: data.table (>= 1.11.8), DiceKriging, stats, foreach, dbscan, lhs, crayon, ggplot2, ggpubr (>= 0.2.4)
 Suggests: knitr, rmarkdown, xgboost, doParallel, testthat
 License: GPL-2
 Encoding: UTF-8
-RoxygenNote: 7.2.1
+RoxygenNote: 7.3.3
 VignetteBuilder: knitr
-Maintainer: Samuel Wilson <samwilson303@gmail.com>

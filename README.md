@@ -1,14 +1,6 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-[![Build
-Status](https://api.travis-ci.org/AnotherSamWilson/ParBayesianOptimization.svg)](https://travis-ci.org/AnotherSamWilson/ParBayesianOptimization)
-[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/ParBayesianOptimization)](https://CRAN.R-project.org/package=ParBayesianOptimization)
-[![DEV\_Version\_Badge](https://img.shields.io/badge/Dev-1.2.5-blue.svg)](https://CRAN.R-project.org/package=ParBayesianOptimization)
-[![CRAN\_Downloads](https://cranlogs.r-pkg.org/badges/grand-total/mltools)](https://CRAN.R-project.org/package=ParBayesianOptimization)
-[![Coverage
-Status](https://codecov.io/gh/AnotherSamWilson/ParBayesianOptimization/branch/master/graph/badge.svg)](https://codecov.io/gh/AnotherSamWilson/ParBayesianOptimization/branch/master)
-
 # Parallelizable Bayesian Optimization
 
 <img src='vignettes/icon.png' align = 'right' height="300" />
@@ -20,39 +12,31 @@ More information can be found in the package vignettes and manual.
 ## Table of Contents
 
   - [01 -
-    Installation](https://github.com/AnotherSamWilson/ParBayesianOptimization#Installation)  
+    Installation](https://github.com/brian-j-smith/ParBayesianOptimization#Installation)  
   - [02 - Package
-    Process](https://github.com/AnotherSamWilson/ParBayesianOptimization#Package-Process)  
+    Process](https://github.com/brian-j-smith/ParBayesianOptimization#Package-Process)  
   - [03 - Bayesian Optimization
-    Intuition](https://github.com/AnotherSamWilson/ParBayesianOptimization#Bayesian-Optimization-Intuition)  
+    Intuition](https://github.com/brian-j-smith/ParBayesianOptimization#Bayesian-Optimization-Intuition)  
   - [04 - Simple
-    Example](https://github.com/AnotherSamWilson/ParBayesianOptimization#Simple-Example)  
+    Example](https://github.com/brian-j-smith/ParBayesianOptimization#Simple-Example)  
   - [05 - Hyperparameter
-    Tuning](https://github.com/AnotherSamWilson/ParBayesianOptimization#Hyperparameter-Tuning)  
+    Tuning](https://github.com/brian-j-smith/ParBayesianOptimization#Hyperparameter-Tuning)  
   - [06 - Running In
-    Parallel](https://github.com/AnotherSamWilson/ParBayesianOptimization#Running-In-Parallel)  
+    Parallel](https://github.com/brian-j-smith/ParBayesianOptimization#Running-In-Parallel)  
   - [07 - Sampling Multiple Promising Points at
-    Once](https://github.com/AnotherSamWilson/ParBayesianOptimization#Sampling-Multiple-Promising-Points-at-Once)  
+    Once](https://github.com/brian-j-smith/ParBayesianOptimization#Sampling-Multiple-Promising-Points-at-Once)  
   - [08 - How Long Should it Run
-    For?](https://github.com/AnotherSamWilson/ParBayesianOptimization#how-long-should-it-run-for)  
+    For?](https://github.com/brian-j-smith/ParBayesianOptimization#how-long-should-it-run-for)  
   - [09 - Setting Stopping
-    Criteria](https://github.com/AnotherSamWilson/ParBayesianOptimization#Setting-Time-Limits-and-Other-Halting-Criteria)
+    Criteria](https://github.com/brian-j-smith/ParBayesianOptimization#Setting-Time-Limits-and-Other-Halting-Criteria)
 
 ## Installation
 
 You can install the most recent stable version of
-ParBayesianOptimization from CRAN with:
+ParBayesianOptimization with:
 
 ``` r
-install.packages("ParBayesianOptimization")
-```
-
-You can also install the most recent development version from github
-using devtools:
-
-``` r
-# install.packages("devtools")
-devtools::install_github("AnotherSamWilson/ParBayesianOptimization")
+install.packages("ParBayesianOptimization", repos="https://brian-j-smith.github.io/drat")
 ```
 
 ## Package Process
@@ -147,7 +131,7 @@ optimize. This function should return, at a minimum, a list with a Score
 element. You can also return other elements that you want to keep track
 of in each run of the scoring function, which we show in the section
 [Hyperparameter
-Tuning](https://github.com/AnotherSamWilson/ParBayesianOptimization#Hyperparameter-Tuning).
+Tuning](https://github.com/brian-j-smith/ParBayesianOptimization#Hyperparameter-Tuning).
 
 ``` r
 simpleFunction <- function(x) dnorm(x,3,2)*1.5 + dnorm(x,7,1) + dnorm(x,10,2)
@@ -415,7 +399,7 @@ sets in the next round of scoring function runs.
 ## How Long Should it Run For?
 
 Going back to the example in [Simple
-Example](https://github.com/AnotherSamWilson/ParBayesianOptimization#Simple-Example),
+Example](https://github.com/brian-j-smith/ParBayesianOptimization#Simple-Example),
 (if you let this run for a few more iterations and set `plotProgress =
 TRUE`) you will notice this chart is updated at each iteration:
 

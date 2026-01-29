@@ -105,8 +105,7 @@
 #'
 #' @section Vignettes:
 #'
-#' It is highly recommended to read the \href{https://github.com/AnotherSamWilson/ParBayesianOptimization}{GitHub} for examples.
-#' There are also several vignettes available from the official \href{https://CRAN.R-project.org/package=ParBayesianOptimization}{CRAN Listing}.
+#' It is highly recommended to read the \href{https://github.com/brian-j-smith/ParBayesianOptimization}{GitHub} for examples.
 #'
 #' @examples
 #' # Example 1 - Optimization of a continuous single parameter function

@@ -1,3 +1,12 @@
+## ParBayesianOptimization 1.2.7
+### Changes  
+
+* Fixed compatibility errors with xgboost in the vignettes and testing programs.
+
+## ParBayesianOptimization 1.2.5
+### Changes  
+Fixed a reproducibility bug.
+
 ## ParBayesianOptimization 1.2.4
 ### Changes  
 Fixed a small bug that allowed duplicates to make their way into the candidate table.
